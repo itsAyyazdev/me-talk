@@ -1,0 +1,192 @@
+name: me_talk
+description: A new Flutter application.
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+version: 1.0.0+1
+environment:
+  sdk: ">=2.2.0 <3.0.0"
+publish_to: none
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^0.1.2
+  device_info: ^0.4.1+5
+  hydrated_bloc: ^2.0.0
+  flutter_bloc: ^2.0.0
+  shared_preferences: ^0.5.3+4
+  flutter_facebook_login: ^2.0.1
+  permission_handler: 4.0.0
+  #flutter_kakao_login: ^0.5.0
+  #flutter_naver_login: ^1.0.1
+  dio: ^3.0.3
+  #pin_code_text_field: ^1.4.0
+  international_phone_input: ^1.0.2
+  place_picker: 0.9.9
+  firebase_auth:
+    git:
+      url: https://github.com/19hours/flutterfire.git
+      path: packages/firebase_auth
+    # git:
+    #   url: https://github.com/collinjackson/plugins.git
+    #   ref: 441417c2fed0ff26bf84a49ab2c5ffd2aa5487de
+    #   path: packages/firebase_auth
+    # ^0.15.0+1
+  flutter_local_notifications: ^0.8.4
+  firebase_messaging: ^5.1.6
+  flutter_spinkit: ^4.0.0
+  page_indicator: ^0.2.0
+  location: ^2.3.5
+  #smooth_star_rating: ^1.0.3
+  equatable: ^1.0.0
+  cached_network_image: ^2.0.0
+  flare_flutter: ^2.0.1
+  #cached_network_image: ^1.1.3
+  extended_image: ^0.6.8
+  flare_splash_screen: 3.0.0
+  image_picker: ^0.6.1+10
+  fluttertoast: ^3.1.3
+  font_awesome_flutter: ^8.5.0
+  vibrate: ^0.0.4
+  geolocator: ^5.1.5
+  random_color: ^1.0.3
+  google_maps_flutter: ^0.5.21+11
+  google_maps_webservice:
+  webview_flutter:
+  flutter_section_table_view: ^1.0.5
+  flutter_luban: ^0.1.6+1
+  loadmore:
+  toast: ^0.1.4
+  share:
+  uni_links:
+  url_launcher:
+  json_annotation:
+  flutter_calendar_carousel: ^1.4.10
+  smooth_star_rating: ^1.0.3
+  simple_animations:
+  flutter_slidable:
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  json_serializable:
+
+# flutter_icons:
+#   android: "launcher_icon" 
+#   ios: true
+#   image_path: "assets/images/icon_logos.png"
+
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter.
+# flutter_native_splash:
+#   #image: assets/images/app_icon_2.png
+#   color: "ffffff"
+#   android_disable_fullscreen: true
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/
+    - assets/images/
+    - assets/images/userProfile/
+    - assets/images/selectBusiness/
+    - assets/images/me_talk_ICON/
+    - assets/images/icon2/
+    - assets/images/business_profile/
+    - assets/json_files/
+    - assets/images/beauty/Nails/
+    - assets/images/beauty/shop/
+    - assets/images/beauty/hospital_event/
+    - assets/images/beauty/banner_beauty/
+    - assets/images/Reviews/
+    - assets/images/community/
+    - assets/images/category/
+    - assets/images/Doctors/
+    - assets/images/beauty/Portfolio_profile_pics/
+  #  - images/a_dot_ham.jpeg
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware.
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  fonts:
+    - family: MontserratRegular
+      fonts:
+        - asset: assets/fonts/Montserrat-Regular.ttf
+
+    - family: MontserratLight
+      fonts:
+        - asset: assets/fonts/Montserrat-Light.ttf
+
+    - family: MontserratMedium
+      fonts:
+        - asset: assets/fonts/Montserrat-Medium.ttf
+
+    - family: MontserratBold
+      fonts:
+        - asset: assets/fonts/Montserrat-Bold.ttf
+
+    - family: HYGothicExtra
+      fonts:
+        - asset: assets/fonts/HYGothic-Extra.ttf
+
+    - family: NanumBarunGothic
+      fonts:
+        - asset: assets/fonts/NanumBarunGothic.ttf
+
+    - family: BMEULJIROTTF
+      fonts:
+        - asset: assets/fonts/BMEULJIROTTF.ttf
+
+    - family: SEGOEUIRegular
+      fonts:
+        - asset: assets/fonts/SEGOEUI.TTF
+
+    - family:  PoppinsMedium
+      fonts:
+        - asset: assets/fonts/Poppins-Medium.ttf
+
+    - family:  MontserratSemiBold
+      fonts:
+        - asset: assets/fonts/Montserrat-SemiBold.ttf
+
+    - family: GibsonSemibold
+      fonts:
+        - asset: assets/fonts/gibson_semibold.ttf
+
+    - family: GibsonSemibold
+      fonts:
+        - asset: assets/fonts/gibson_regular.ttf
+
+    - family: THEjunggt140
+      fonts:
+        - asset: assets/fonts/THEjunggt140.otf
+
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
